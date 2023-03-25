@@ -1,8 +1,9 @@
 {
+  "homepage": "https://sukrutha3112.github.io/Youtube-clone/",
   "name": "first-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://sukrutha3112.github.io/Youtube-clone/",
+  
   "dependencies": {
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
