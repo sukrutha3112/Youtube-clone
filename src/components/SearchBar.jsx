@@ -15,11 +15,12 @@ const SearchBar = () => (
             pl: 2,
             boxShadow: 'none',
             mr: { sm: 5 }//margin right on small devices set to 5
+           
         }}
     >
         <input
             className='search-bar'
-            placeholder='Search..'
+            placeholder='Search'
             value=""
             onChange={() => {}}
 

@@ -1,5 +1,5 @@
 {
-  "homepage": "https://sukrutha3112.github.io/Youtube-clone/",
+  
   "name": "first-app",
   "version": "0.1.0",
   "private": true,
@@ -19,8 +19,7 @@
     "react-scripts": "^5.0.1"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build",
+  
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

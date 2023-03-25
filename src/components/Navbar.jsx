@@ -4,33 +4,50 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { logo } from '../utils/constants'
 import SearchBar from './SearchBar'
+import MenuIcon from '@mui/icons-material/Menu';
+
 
 
 const Navbar = () => (
+    
     <Stack
-         direction="row"        
-         alignItems="center"
-         p={2}
+        // direction="row"
+        alignItems="center"
+        p={2}
+        // justifyContent="space-evenly"
+        display='flex'
+        direction='row'
+
         sx={{
             position: 'sticky', background: '#000', top: 0,
-            justifyContent: 'space-between'
+            // justifyContent: 'space-between'.
+
         }}>
-            <Link to="/" style={{display: 'flex', alignItems:'center'}}>
-                <img src={logo} alt="logo" height={45} />
+        
+        <Link to="/" style={{ display: 'flex', alignItems: 'center', }}>
+            <img src={logo} alt="logo" height={45} />
 
-            </Link>
+        </Link>
+        <Stack sx={{
+            display: 'flex',
+            flexDirection: 'row',
+            justifyContent: 'center',
+            flexGrow: 1
+        }}
+>
             <SearchBar />
-            <IconButton
-                size="large"
-                aria-label="account of current user"
-                aria-controls="menu-appbar"
-                aria-haspopup="true"
-                sx={{color: 'white'}}
-              >
-                <AccountCircle />
-              </IconButton>
+        
+        </Stack>
 
-    </Stack>
+        <IconButton
+            size="small"           
+            sx={{ color: 'white', justifyContent: 'flex-end' }}
+        >
+            <AccountCircle />
+        </IconButton>
+
+    </Stack >
 )
 
 export default Navbar
+
